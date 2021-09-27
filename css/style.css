@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/*Primary*/
+/*Accent*/
+/*Neutral*/
+.container {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  margin: 3rem 2rem;
+  color: white;
+  max-width: 1200px;
+  min-height: 80vh;
+}
+
+.container .primary h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.container .primary p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.container .secondary .cta {
+  background-color: #6055a5;
+  border-radius: .5rem;
+  margin-bottom: 2.5rem;
+  -webkit-box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.container .secondary .cta p {
+  margin-bottom: 0;
+  font-size: 15px;
+  opacity: 0.8;
+  padding: 20px;
+}
+
+@media (min-width: 43em) {
+  .container .primary {
+    padding: 1rem 8rem;
+  }
+  .container .secondary {
+    padding: 0 4rem;
+  }
+}
+
+@media (min-width: 62em) {
+  .container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 5rem;
+  }
+  .container .primary {
+    margin: 3.5rem;
+    padding: 0;
+    text-align: left;
+  }
+  .container .primary h1 {
+    font-size: 2.5rem;
+  }
+  .container .primary p {
+    font-size: .8rem;
+    padding-right: 2.3rem;
+  }
+  .container .secondary .cta {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 87em) {
+  .container {
+    margin: 6rem;
+  }
+  .container .primary {
+    padding-right: 3rem;
+    text-align: left;
+  }
+  .container .primary h1 {
+    font-size: 2.5rem;
+  }
+  .container .primary p {
+    font-size: .8rem;
+    padding-right: 2rem;
+  }
+  .container .secondary {
+    padding: 1rem;
+  }
+}
+
+.secondary .form_container {
+  background-color: white;
+  border-radius: .3rem;
+  -webkit-box-shadow: 0 0.3rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.3rem rgba(0, 0, 0, 0.2);
+  padding: 1.8rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.secondary .form_container .form-control {
+  position: relative;
+  margin-bottom: 1.8rem;
+}
+
+.secondary .form_container .form-control input {
+  border-radius: .3rem;
+  border: 1.3px solid #b9b6d3;
+  font-family: 'Poppins', sans-serif;
+  font-size: .8rem;
+  font-weight: 500;
+  padding: .9rem 1.5rem;
+  display: block;
+  width: 100%;
+}
+
+.secondary .form_container .form-control input:focus {
+  border: 1.3px solid #6055a5;
+  outline: none;
+}
+
+.secondary .form_container .form-control small {
+  color: #ff7a7a;
+  font-weight: 600;
+  position: absolute;
+  bottom: -1.5rem;
+  right: 0;
+  opacity: 0;
+  text-align: right;
+}
+
+.secondary .form_container .form-controlerror input {
+  border-color: #ff7a7a;
+  color: #ff7a7a;
+}
+
+.secondary .form_container .form-controlerror input::-webkit-input-placeholder {
+  color: #ff7a7a;
+}
+
+.secondary .form_container .form-controlerror input:-ms-input-placeholder {
+  color: #ff7a7a;
+}
+
+.secondary .form_container .form-controlerror input::-ms-input-placeholder {
+  color: #ff7a7a;
+}
+
+.secondary .form_container .form-controlerror input::placeholder {
+  color: #ff7a7a;
+}
+
+.secondary .form_container .form-control img {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  right: .9rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 1.2rem;
+}
+
+.secondary .form_container .form-controlerror img {
+  opacity: 1;
+}
+
+.secondary .form_container button {
+  cursor: pointer;
+  background-color: #38cc8c;
+  color: white;
+  margin-bottom: 1rem;
+  border: 1.3px solid #38cc8c;
+  border-radius: .3rem;
+  -webkit-box-shadow: 0 0.1rem #38cc8c;
+          box-shadow: 0 0.1rem #38cc8c;
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: .8rem;
+  font-weight: 500;
+  padding: .9rem 1.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.secondary .form_container button:focus {
+  outline: none;
+}
+
+.secondary .form_container button:active {
+  -webkit-box-shadow: 0 0 #38cc8c;
+          box-shadow: 0 0 #38cc8c;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.secondary .form_container small {
+  display: block;
+  color: #b9b6d3;
+  font-size: .6rem;
+  font-weight: 500;
+  margin-top: .9rem;
+}
+
+.secondary .form_container small a {
+  color: #ff7a7a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ff7a7a;
+  background-image: url(../images/bg-intro-mobile.png);
+}
+
+img {
+  max-width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+}
+
+.attribution a {
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
