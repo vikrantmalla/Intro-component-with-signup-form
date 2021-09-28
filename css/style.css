@@ -128,35 +128,14 @@
   color: #ff7a7a;
   font-weight: 600;
   position: absolute;
-  bottom: -1.5rem;
+  bottom: -1.2rem;
   right: 0;
-  opacity: 0;
+  visibility: hidden;
   text-align: right;
 }
 
-.secondary .form_container .form-controlerror input {
-  border-color: #ff7a7a;
-  color: #ff7a7a;
-}
-
-.secondary .form_container .form-controlerror input::-webkit-input-placeholder {
-  color: #ff7a7a;
-}
-
-.secondary .form_container .form-controlerror input:-ms-input-placeholder {
-  color: #ff7a7a;
-}
-
-.secondary .form_container .form-controlerror input::-ms-input-placeholder {
-  color: #ff7a7a;
-}
-
-.secondary .form_container .form-controlerror input::placeholder {
-  color: #ff7a7a;
-}
-
 .secondary .form_container .form-control img {
-  opacity: 0;
+  visibility: hidden;
   position: absolute;
   top: 50%;
   right: .9rem;
@@ -165,8 +144,33 @@
   height: 1.2rem;
 }
 
-.secondary .form_container .form-controlerror img {
-  opacity: 1;
+.secondary .form_container .form-control.error input {
+  border-color: #ff7a7a;
+  color: #ff7a7a;
+}
+
+.secondary .form_container .form-control.error input::-webkit-input-placeholder {
+  color: #ff7a7a;
+}
+
+.secondary .form_container .form-control.error input:-ms-input-placeholder {
+  color: #ff7a7a;
+}
+
+.secondary .form_container .form-control.error input::-ms-input-placeholder {
+  color: #ff7a7a;
+}
+
+.secondary .form_container .form-control.error input::placeholder {
+  color: #ff7a7a;
+}
+
+.secondary .form_container .error small {
+  visibility: visible;
+}
+
+.secondary .form_container .error img {
+  visibility: visible;
 }
 
 .secondary .form_container button {
@@ -243,5 +247,11 @@ img {
 .attribution a {
   color: white;
   text-decoration: none;
+}
+
+@media (min-width: 62em) {
+  body {
+    background-image: url(../images/bg-intro-desktop.png);
+  }
 }
 /*# sourceMappingURL=style.css.map */

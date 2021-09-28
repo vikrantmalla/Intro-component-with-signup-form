@@ -32,3 +32,9 @@
         color: $colorWhite;
         text-decoration: none;
     }
+    
+    @media (min-width: 62em) {
+        body {
+            background-image: url(../images/bg-intro-desktop.png);
+        }
+    }
